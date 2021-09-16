@@ -1,0 +1,49 @@
+/* mobile and tablet */
+@media only screen and (max-width: 1023px){
+    .header{
+        width: 100%;
+    }
+}
+/* tablet */
+
+@media only screen and (min-width:740px ) and (max-width:1023px){
+    .content__introduce{
+        height:130vh !important;
+    }
+    .content__about{
+        height:150vh !important;
+    }
+    
+}
+
+@media only screen and (min-width:740px){
+    .toggle {
+        display:none;
+        
+    }
+}
+/* mobile */
+@media only screen and (max-width:739px){
+ 
+   .header__nav{
+       display: none;
+   }
+   .content__introduce{
+       width: 100%;
+       height:100vh !important;
+   }
+   .content__introduce--image{
+       display: none;
+   }
+   .content__about{
+       
+       height:150% !important;
+   }
+   .education{
+       height:300vh !important;
+   }
+   .list__education{
+       margin: -15px !important;
+   }
+
+}
