@@ -23,16 +23,46 @@ $(document).ready(function(){
        
     })
 })
-// $(document).ready(function(){
-//     $(window).scroll(function(event) {
+$(document).ready(function(){
+   $(".nav__list a").click(function(event){
+       event.preventDefault();
+        post =$(this).attr('href');
+        position=$(post).offset().top;
+        $('html, body').animate({scrollTop: position},500);
+   })
+})
 
-//         var pos_body = $('html, body').scrollTop();
-//         past = $(this).attr('href');
+$(document).ready(function(){
+    $(window).scroll(function(event) {
 
-//         position =$(past).offset().top;
+        var pos_body = $('html, body').scrollTop();
+        console.log(pos_body);
 
-//         if(pos_body ===position){
-//             $("list__item").addClass("animate");
-//         }
-//     })
-// })
+        if(pos_body > 2500){
+            $(".list__item").addClass("animate");
+        
+        }
+        else{
+            $(".list__item").removeClass("animate");
+        }
+
+       
+    })
+})
+$(document).ready(function(){
+    $(window).scroll(function(event) {
+
+        var pos_body = $('html, body').scrollTop();
+        console.log(pos_body);
+
+        if(pos_body > 1450){
+            $(".portfolio__card--left").addClass("animate__card");
+        
+        }
+        else{
+            $(".portfolio__card--left").removeClass("animate__card");
+        }
+
+       
+    })
+})
