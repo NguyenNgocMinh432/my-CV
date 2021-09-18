@@ -6,23 +6,16 @@ $(document).ready(function(){
 
 })
 
-$(document).ready(function(){
-    $(window).scroll(function(event) {
+// $(document).ready(function(){
+//     $(window).scroll(function(event) {
 
-        var pos_body = $('html, body').scrollTop();
-        console.log(pos_body);
-
-        if(pos_body > 0){
-            $(".header").addClass("scroll");
-        
-        }
-        else{
-            $(".header").removeClass("scroll");
-        }
+//         var pos_body = $('html, body').scrollTop();
+//         console.log(pos_body);
 
        
-    })
-})
+       
+//     })
+// })
 $(document).ready(function(){
    $(".nav__list a").click(function(event){
        event.preventDefault();
@@ -36,7 +29,16 @@ $(document).ready(function(){
     $(window).scroll(function(event) {
 
         var pos_body = $('html, body').scrollTop();
-        console.log(pos_body);
+        // console.log(pos_body);
+
+        if(pos_body > 0){
+            $(".header").addClass("scroll");
+        
+        }
+        else{
+            $(".header").removeClass("scroll");
+        }
+
 
         if(pos_body > 2500){
             $(".list__item").addClass("animate");
@@ -46,15 +48,6 @@ $(document).ready(function(){
             $(".list__item").removeClass("animate");
         }
 
-       
-    })
-})
-$(document).ready(function(){
-    $(window).scroll(function(event) {
-
-        var pos_body = $('html, body').scrollTop();
-        console.log(pos_body);
-
         if(pos_body > 1450){
             $(".portfolio__card--left").addClass("animate__card");
         
@@ -63,6 +56,31 @@ $(document).ready(function(){
             $(".portfolio__card--left").removeClass("animate__card");
         }
 
+        
+
        
+    })
+})
+$(document).ready(function(){
+    $(window).scroll(function(event) {
+
+        var pos_body = $('html, body').scrollTop();
+        // console.log(pos_body);
+
+        if(pos_body > 600){
+            $(".back__to--top i").show();
+        }else{
+            $(".back__to--top  i").hide();
+        }   
+    })
+    $(".back__to--top i").click(function(event) {
+        $('html , body').animate(
+            {
+                scrollTop: 0
+            },
+            1000
+           
+        );
+        !1
     })
 })
