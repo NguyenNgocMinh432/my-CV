@@ -16,7 +16,7 @@
     .contact__item--right > p{
         font-size: 10px;
     }
-    .contact__item--left > i{
+    .contact__item--left > a{
         padding:1px !important;
     }
 }
@@ -57,7 +57,7 @@
 
 }
 @media only screen and (max-width:500px){
-    ..content__about--title h3{
+    .content__about--title h3{
         font-size:50px !important;
     }
     .list__education{
