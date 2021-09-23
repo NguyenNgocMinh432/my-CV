@@ -123,6 +123,7 @@ button{
     height: 100%;
     /* background-color: yellow; */
 }
+
 .content__introduce--list{
     display: flex;
     margin-bottom: 50px;
@@ -191,6 +192,7 @@ button{
     height:100%;
     vertical-align: middle;
     border-style: none;
+    margin-left: 30%;
 }
 .content__about{
     
@@ -211,7 +213,7 @@ button{
     width: 100%;
 }
 .content__about--image img{
-    width: 55%;
+    width: 60%;
     height: 100%;
 }
 .content__about--hi > h3{
@@ -303,6 +305,7 @@ button{
     z-index: 1;
     -webkit-transition: .3s;
     transition: .3s;
+    cursor: pointer;
 
 }
 .time__circle:after{
@@ -317,6 +320,7 @@ button{
     opacity: 0;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
+    cursor: pointer;
 }
 .title{
     font-size: 18px;
@@ -369,7 +373,7 @@ button{
     padding:50px 0px;
 }
 .animate__card{
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-name: fadeInUp;
 }
 @keyframes fadeInUp {
@@ -404,6 +408,12 @@ button{
     text-align: center;
     
 }
+.portfolio__title--text > p{
+    color: #fff;
+    font-size:16px;
+    padding:8% 0px ;
+   
+}
 .portfolio__card--left > a:hover h6 {
     /* background-color: red; */
     
@@ -434,6 +444,7 @@ button{
 }
 .skills__item{
     padding-top: 50px;
+    cursor: pointer;
 }
 .skills__item > span{
     display: inline-block;
@@ -630,6 +641,7 @@ button{
     border-radius:5px;
     border:none;
     font-size: 16px;
+    color: #dfdfdf;
     
 }
 .contact__input--center>input{
@@ -643,9 +655,10 @@ button{
     border-radius:5px;
     border:none;
     font-size: 16px;
+    color: #dfdfdf;
     
 }
-.contact__input-below >textarea {
+.contact__input-below > textarea {
     width: 100%;
     height:200px;
     background-color:#23263A;
@@ -655,8 +668,11 @@ button{
     outline:none;
     padding: 15px;
     font-size:16px;
-    overflow: auto;
-    resize: vertical;
+    border: none;
+    overflow: auto; 
+    resize: vertical; 
+    border-color: Transparent; 
+    color: #dfdfdf;
 }
 .contact__btn{
     /* color: #fff; */
@@ -691,14 +707,15 @@ button{
   transition: all 0.1s ;
 
 } */
-.contact__btn:hover > a{
+/* .contact__btn:hover > a{
     color: #000;
-}
+} */
 .contact__btn:hover{
     /* top: auto;
     bottom: 0;
     height: 100%; */
-    opacity: 0.8;
+    opacity: 0.9;
+    box-shadow: 0 0 0 4px #f57a83;
 }
 /* .contact__btn:active{
     top:2px;
@@ -732,6 +749,7 @@ button{
    
     display:none;
     animation: scale 1.5s infinite;
+    cursor: pointer;
 }    
 @keyframes scale {
     from {
@@ -745,4 +763,19 @@ button{
 }
 .show{
    display: block;
+}
+input[type="text"]:focus{
+    /* background-color:#fff; */
+    box-shadow: 0 0 0 0.2rem rgb(0 123 111 / 25%);
+}
+input[type="email"]:focus{
+    /* background-color:#fff; */
+    box-shadow: 0 0 0 0.2rem rgb(0 123 111 / 25%);
+}
+textarea:focus{
+    box-shadow: 0 0 0 0.2rem rgb(0 123 111 / 25%);
+}
+.middle{
+    font-size:24px;
+    color:#fff;
 }
