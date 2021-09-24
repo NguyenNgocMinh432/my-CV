@@ -31,6 +31,7 @@ $(document).ready(function () {
     var reg = /^\w+@[a-zA-z]{3,}\.com$/i;
 
     $(".contact__btn").click(function (event) {
+        event.preventDefault();
         var arr = document.getElementsByTagName("input");
         var name = arr[0].value;
         var email = arr[1].value;
@@ -44,9 +45,7 @@ $(document).ready(function () {
             return;
         }
         if(email.match(reg)){
-            alert("submitted successfully!!");
-            email==="";
-            name==="";
+            alert("submitted successfully!!"); 
             return;
         }
         else{
@@ -54,10 +53,11 @@ $(document).ready(function () {
             return;
         }
         
-        
         // alert("Gửi thành công!")
     })
    
+    
+    
 
     $(window).scroll(function (event) {
 
