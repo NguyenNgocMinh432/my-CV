@@ -211,9 +211,10 @@ button{
 }
 .content__about--image{
     width: 100%;
+    height:100%;
 }
 .content__about--image img{
-    width: 60%;
+    width: 57%;
     height: 100%;
 }
 .content__about--hi > h3{
@@ -642,6 +643,7 @@ button{
     border:none;
     font-size: 16px;
     color: #dfdfdf;
+    font-family: 'Poppins', sans-serif;
     
 }
 .contact__input--center>input{
@@ -656,6 +658,7 @@ button{
     border:none;
     font-size: 16px;
     color: #dfdfdf;
+    font-family: 'Poppins', sans-serif;
     
 }
 .contact__input-below > textarea {
@@ -673,6 +676,7 @@ button{
     resize: vertical; 
     border-color: Transparent; 
     color: #dfdfdf;
+    font-family: 'Poppins', sans-serif;
 }
 .contact__btn{
     /* color: #fff; */
